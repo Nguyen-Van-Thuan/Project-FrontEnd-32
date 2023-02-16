@@ -277,6 +277,7 @@
     left: 100%;
     top: 0;
     display: none;
+    z-index: 9999;
 }
 .menu-main li:hover .sub-menu-c1 {
     display: block;
@@ -352,36 +353,77 @@
     background-color: greenyellow;
     height: 348px;
 }
-
-
-
-
-
-
-
-
-
-
-
 .top-saller .row:nth-child(2) {
     height: 200px;
     background-color: yellow;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* Buy-Product./Start */
+.buy-product {
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/0de2668c294edf9d5fd8a8647b2c65b6.png");
+    background-repeat: no-repeat;
+    background-color: #000d21;
+    background-position: top;
+}
+.buy-product .container {
+    height: 500px;
+}
 /*--- Footer./Start ---*/
 .footer {
     height: 350px;
     width: 100%;
     background-color: #000;
+}
+
+/* popup messgenger */
+.wrap-popup {
+    /* width: 450px;
+    height: 600px;
+    background-color: red; */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+.icon-popup {
+    width: 65px;
+    height: 65px;
+    background-color: green;
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.content-popup {
+    width: 370px;
+    height: 473px;
+    background-color: blue;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    display: none;
+}
+
+.close {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
